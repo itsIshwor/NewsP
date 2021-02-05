@@ -42,7 +42,7 @@
 								<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 								<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 									url="jdbc:mysql://localhost:3306/practice" user="root"
-									password="password" />
+									password="root" />
 
 								<sql:query var="rs" dataSource="${db}">
 						select  *, count(*) as total from categories;

@@ -12,7 +12,7 @@ public class DeleteC {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			String user = "root";
-			String pass = "password";
+			String pass = "root";
 			String url = "jdbc:mysql://localhost:3306/practice";
 			String sql = "delete from categories where cid = ?";
 

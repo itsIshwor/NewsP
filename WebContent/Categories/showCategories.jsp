@@ -25,7 +25,7 @@
 
 	<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/practice" user="root"
-		password="password" />
+		password="root" />
 	<sql:query var="rs" dataSource="${db}">select * from categories</sql:query>
 	<div class="container my-4 c-table">
 		<p class="mt-3 text-center">
