@@ -11,7 +11,7 @@ public class UpdateCategories {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			String user = "root";
-			String pass = "password";
+			String pass = "root";
 			String url = "jdbc:mysql://localhost:3306/practice";
 			String sql = "update categories set cname = ? where cid = ?";
 			String categories = cb.getcName();

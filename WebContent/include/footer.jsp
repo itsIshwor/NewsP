@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 	url="jdbc:mysql://localhost:3306/practice" user="root"
-	password="password"></sql:setDataSource>
+	password="root"></sql:setDataSource>
 <sql:query var="rs" dataSource="${db}">select cname from categories</sql:query>
 <footer class="bg-dark mt-2">
 	<div class="container ">

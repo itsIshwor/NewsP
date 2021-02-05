@@ -15,7 +15,7 @@ public class InsertCategories {
 		}
 
 		String user = "root";
-		String pass = "password";
+		String pass = "root";
 		String url = "jdbc:mysql://localhost:3306/practice";
 		String sql = "insert into categories values(cid,?)";
 		String categories = cb.getcName();

@@ -14,7 +14,7 @@ public class NewsDAO {
 		}
 
 		String user = "root";
-		String password = "password";
+		String password = "root";
 		String url = "jdbc:mysql://localhost:3306/practice";
 
 		Connection con = null;

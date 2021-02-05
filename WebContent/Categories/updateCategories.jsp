@@ -26,7 +26,7 @@ if (session.getAttribute("admin") == null) {
 	%>
 	<%--<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/practice" user="root"
-		password="password" />
+		password="root" />
 	<sql:query var="ps" dataSource="${db}"></sql:query> --%>
 	<%
 		try {

@@ -4,7 +4,7 @@
 	href="${pageContext.request.contextPath}/bootstrap/css/style.css"> --%>
 <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 	url="jdbc:mysql://localhost:3306/practice" user="root"
-	password="password"></sql:setDataSource>
+	password="root"></sql:setDataSource>
 <sql:query var="rs" dataSource="${db}">select cname from categories</sql:query>
 <nav
 	class="navbar navbar-expand-xs sticky-top nav-menu navbar-dark bg-dark text-white">
