@@ -13,7 +13,7 @@
 </head>
 <body class="bg-light">
 	<%-- Creating Connection to database --%>
-	<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
+	<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/practice" user="root"
 		password="root" />
 	<%-- Providing query to fetch data from server --%>

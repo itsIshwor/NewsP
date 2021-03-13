@@ -27,7 +27,7 @@ if (session.getAttribute("admin") == null) {
 						Categories</a>
 				</p>
 				<div>
-					<form action="${pageContext.request.contextPath}/CategoriesC"
+					<form action="${pageContext.request.contextPath}/categories/"
 						method="post">
 						<div class="form-group">
 							<label for="cat" class="form-label">Categories Name:</label> <input

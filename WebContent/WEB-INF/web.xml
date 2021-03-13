@@ -7,23 +7,28 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>CategoriesC</servlet-name>
-		<servlet-class>categories.controller.CategoriesC</servlet-class>
+		<servlet-class>com.newsp.controller.categories.CategoriesC</servlet-class>
+	</servlet> -->
+	<servlet>
+		<servlet-name>news</servlet-name>
+		<servlet-class>com.newsp.controller.news.CreateNews</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>CategoriesC</servlet-name>
-		<url-pattern>/CategoriesC</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>AdminLogin</servlet-name>
-		<servlet-class>admin.AdminLogin</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AdminLogin</servlet-name>
-		<url-pattern>/adminLogin</url-pattern>
+		<servlet-name>news</servlet-name>
+		<url-pattern>/news/addnews</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>AdminLogin</servlet-name>
+		<servlet-class>com.newsp.controller.admin.AdminLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminLogin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
 		<location>/error.jsp</location>
