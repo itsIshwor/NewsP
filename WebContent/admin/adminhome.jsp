@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,16 +40,15 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div id="" class="">
-								<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-								<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-								<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
+
+								<%-- <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 									url="jdbc:mysql://localhost:3306/practice" user="root"
 									password="root" />
 
 								<sql:query var="rs" dataSource="${db}">
-						select  *, count(*) as total from categories;
-					</sql:query>
-								<c:forEach items="${rs.rows}" var="count">
+						select  *, count(*) as total from categories; 
+					</sql:query>--%>
+								<%-- <c:forEach items="${rs.rows}" var="count">
 									<div class="card">
 										<p class="card-title text-center h-4">Total Category
 											Count:</p>
@@ -55,18 +56,18 @@
 											<div class="display-3">${count.total}</div>
 										</div>
 									</div>
-								</c:forEach>
+								</c:forEach> --%>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
+							<%-- 	<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
 								url="jdbc:mysql://localhost:3306/practice" user="root"
 								password="password" />
 
 							<sql:query var="rsn" dataSource="${db}">
 						select  *, count(*) as total from news;
 					</sql:query>
-							<c:forEach items="${rsn.rows}" var="countn">
+							<c:forEach items="${rsn.rows}" var="countn"> 
 								<div class="card">
 									<p class="card-title text-center h-4">Total Category Count:</p>
 									<div class="card-body text-center">
@@ -138,7 +139,7 @@
 										<div class="display-3">${countn.total}</div>
 									</div>
 								</div>
-							</c:forEach>
+							</c:forEach> --%>
 						</div>
 					</div>
 					<div class="row  my-2">
@@ -146,7 +147,7 @@
 							<a href="${pageContext.request.contextPath}/news/createnews.jsp"
 								class="btn btn-primary">Create News</a> &nbsp;&nbsp; <a
 								class="btn btn-primary"
-								href="${pageContext.request.contextPath}/Categories/createCategories.jsp">Create
+								href="${pageContext.request.contextPath}/categories/createCategories.jsp">Create
 								New Category</a>
 						</div>
 					</div>

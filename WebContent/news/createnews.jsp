@@ -24,10 +24,10 @@ if (session.getAttribute("admin") == null) {
 		<div class="row">
 			<div class="col-md-6 mx-auto">
 				<h1 class="text-center">Create News</h1>
-				<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
-					url="jdbc:mysql://localhost:3306/practice" user="root"
-					password="password" />
-				<sql:query var="rs" dataSource="${db}">select * from categories</sql:query>
+<%--				<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"--%>
+<%--					url="jdbc:mysql://localhost:3306/practice" user="root"--%>
+<%--					password="password" />--%>
+<%--				<sql:query var="rs" dataSource="${db}">select * from categories</sql:query>--%>
 				<form action="${pageContext.request.contextPath}/CreateNews"
 					method="post">
 					<div class="form-group">
@@ -39,10 +39,10 @@ if (session.getAttribute("admin") == null) {
 					<div class="form-group">
 						<label for="news-title" class="form-label">News Category</label> <select
 							class="form-control border border-primary" name="newsc">
-							<c:forEach items="${rs.rows}" var="row">
-								<option value="${row.cname}"><c:out
-										value="${row.cname}"></c:out></option>
-							</c:forEach>
+<%--							<c:forEach items="${rs.rows}" var="row">--%>
+<%--								<option value="${row.cname}"><c:out--%>
+<%--										value="${row.cname}"></c:out></option>--%>
+<%--							</c:forEach>--%>
 						</select>
 					</div>
 

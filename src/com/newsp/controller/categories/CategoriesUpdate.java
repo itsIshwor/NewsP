@@ -26,5 +26,6 @@ public class CategoriesUpdate extends HttpServlet {
 		CategoriesDAO.updateC(cb, id);
 		response.sendRedirect("Categories/showCategories.jsp");
 	}
+	
 
 }

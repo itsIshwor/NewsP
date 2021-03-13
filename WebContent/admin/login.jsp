@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>NewsP/Admin/Login</title>
+<title>Entering Restricted Area</title>
 <jsp:include page="/include/favicon.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css">
@@ -19,9 +19,9 @@
 <body class="bg-info">
 	<jsp:include page="/include/header.jsp"></jsp:include>
 	<div class="container">
-		<div class="row h-80 py-3 my-5">
+		<div class="row my-3 my-5">
 			<div class="col-md-8 mx-auto bg-light  py-3">
-				<form action="../adminLogin" method="post">
+				<form action="${pageContext.request.contextPath}/admin" method="post">
 					<div class="form-group">
 						<label class="form-label" for="email">User Email</label> <input
 							type="email" class="form-control border border-primary"
@@ -32,7 +32,7 @@
 							type="password" class="form-control border border-primary"
 							id="pass" placeholder="Admin Password" name="pass">
 					</div>
-					<input type="submit" value="Login" class="btn btn-primary">
+					<input type="submit" value="Login" class="btn btn-primary d-inline-block mx-auto">
 				</form>
 			</div>
 		</div>
