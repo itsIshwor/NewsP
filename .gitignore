@@ -1,2 +1,6 @@
-.idea/
+.idea
+.settings
 NewsP.iml
+.classpath
+.project
+ target/*
